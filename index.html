@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCDC website</title>
+    <script src="https://kit.fontawesome.com/b3a7060812.js" 
+       crossorigin="anonymous"></script>
+
+    <!--styles start-->
+    <style>
+        
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #content aside {
+        float: none;
+        display: block;
+    }
+
+    @media screen and (orientation: portrait) {
+
+#nav { float: none }
+
+}
+        .wrapper{
+            height:auto;
+            width: 100%;
+            border: 1px solid;}
+        .container{
+            height: 100%;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header{
+            height: 120px;
+            
+            
+        }
+        .logo{
+            margin: 10px 0 0;
+
+        }
+        .logo1{
+            float: right;
+            margin: -90px 0 0;
+
+        }
+        .text{
+            margin-left: 35%;
+            margin-top: -110px;
+            border: 1px white;
+            }
+        .nav{
+            height: 50px;
+            background-color: green;
+            margin: 0.5em 0 0.5em 0;
+            margin-bottom: -0.3em;
+            padding-bottom: -0.3em;
+            margin-bottom: 20px;
+            margin-top: -28px;
+            }
+        .nav li{
+            list-style: none;
+            display: inline-block;
+            cursor: pointer;
+            padding:1em 0.5em 1em 0.5em;
+            color: white;
+        }
+        .nav li:hover,nav li:active{
+            background-color: yellow;
+            color: green;
+            }
+        .nav li.dropdown{
+            position: relative;
+           }
+        .nav li ul{
+            background-color: yellow;
+            color: green;
+            position: absolute;
+            display: none;
+            }
+        .nav li.dropdown:hover ul{
+            background-color: yellow;
+            color: green;
+            position: absolute;
+            display: block;
+            width: 150px;
+            top:50px;
+            padding: 1em;
+        }
+        .nav li.dropdown:hover ul li:hover{
+            color: brown;
+        }    
+        .feature-content{
+            height: 380px;
+            margin: 20px 0;
+        }
+        .box1{
+            height: 380px;
+            width: 465px;
+            float: right;
+            }
+        .box2{
+            height: 380px;
+            width: 465px;
+            border: 1px solid silver;
+            background-color:red;
+            border-radius: 5px;
+            }
+        .box11{
+            height: 18%;
+            width: 70%;
+            border: 1px solid;
+            margin: auto;
+            margin-top: 45%;
+            background-color: white;
+            cursor: pointer;    
+        }
+        .box11:hover{
+            transition: 200ms ease-out;
+            box-shadow: 0px 5px 20px 3px rgba(0,0,0,0.4);
+        }    
+
+        .feature-article{
+            height:300px;
+            margin: 20px 0;
+        }
+        .box3{
+            height: 300px;
+            width: 300px;
+            border: 1px solid silver;
+            float: right;
+            border-radius: 5px;
+            }
+        .box12{
+            height: 170px;
+            width: 300px;
+            padding: 0.3em 0 0 0.3em; 
+        }    
+        .box4{
+            height: 300px;
+            width: 300px;
+            border: 1px solid silver;
+            float: right;
+            margin-right:65px;
+            border-radius: 5px;
+        }
+        .box13{
+            height: 170px;
+            width: 300px;
+            padding: 0.3em 0 0 0.3em;
+        }
+        .box5{
+            height: 300px;
+            width: 300px;
+            border: 1px solid silver;
+            border-radius: 5px;
+             }
+        .box14{
+            height: 170px;
+            width: 300px;
+            padding: 0.3em 0 0 0.3em;
+        }
+        .feature-section{
+            height: 300px;
+            margin: 20px 0;
+        }
+        .box6{
+            height: 300px;
+            width: 300px;
+            border: 1px solid silver;
+            float: right;
+            border-radius: 5px;
+        }
+        .box15{
+            height: 170px;
+            width: 300px;
+            padding: 0.3em 0 0 0.3em;
+        }
+        .box16{
+            height: 170px;
+            width: 300px;
+            padding: 0.3em 0 0 0.3em;
+        }
+        .box17{
+            height: 170px;
+            width: 300px;
+            padding: 0.3em 0 0 0.3em;
+        }
+        
+        
+        .box7{
+            height: 300px;
+            width: 300px;
+            border: 1px solid silver;
+            float: right;
+            margin-right: 65px;
+            padding-bottom: 17px;
+            border-radius: 5px;
+            
+        }
+        .box8{
+            height: 300px;
+            width: 300px;
+            border: 1px solid silver;
+            padding-bottom: 17px;
+            border-radius: 5px;
+            
+        } 
+
+        .feature-box{
+            height: 300px;
+            margin-top: 50px;
+        }
+        .box9{
+            height: 300px;
+            width: 465px;
+            border: 1px solid;
+            float: right;
+            
+            }
+        .box10{
+            height: 300px;
+            width: 465px;
+            border: 1px solid silver;
+            }
+
+        .footer{
+            height: 300px;
+            border: 1px solid white;
+            margin-top: 50px;
+            background-color:green;
+        }
+        .box18{
+            height: 300px;
+            width: 500px;
+            float: right;
+        }
+        .box19{
+            height: 300px;
+            width: 300px;
+            float: right;
+            margin-right: 20px;
+            
+        }
+        .box20{
+            height: 300px;
+            width: 370px;
+        }
+        .copy{
+            height: 100px;
+            border: 1px solid white;
+            background-color: orange;
+        }
+    }
+      
+    </style>
+    <!--styles end-->
+</head>
+<body>
+    <div class="border wrapper">
+        <div class="container">
+            <div class=" header">
+                <div class="logo"> <img src="logo.jpg" alt="" srcset=""></div>
+                <div class="logo1"><img src="icon3.jpg" alt="" srcset=""></div>
+                <div class="text"><h1>Nigeria Centre for Disease Control</h1>
+                    <h2 style="margin-top: -30px; margin-left: 24%;color: silver;font-weight: lighter;">Protecting the health of Nigerians</h2>
+                </div>
+            </div>
+            <div class="border nav">
+                <ul class="nav">
+                    <li>Home</li>
+                    <li class="dropdown">About 
+                        <ul>
+                        <li>NCDC</li>
+                        <li> Departments</li>
+                        <li> Leadership</li>
+                        <li>Office of the DG</li>
+                        </ul>
+                  </li>
+                    <li class="dropdown">Publications
+                            <ul>
+                            <li>Weekly Epidemiological Reports</li>
+                            <li> Situation Reports</li>
+                            <li> Project Reports</li>
+                            <li> Annual Reports</li>
+                            <li> Guidelines/Protocol</li>
+                            <li>Establishment/Guiding Documents</li>
+                            <li> Research</li> 
+                            </ul>
+                    </li>
+                    <li class="dropdown">Diseases 
+                        <ul>
+                            <li>A-Z</li>
+                        </ul>
+                    </li>
+                    <li>News/Media</li>
+                    <li class="dropdown" >Training/Events 
+                        <ul>
+                            <li>NFELTP</li>
+                            <li>Internship</li>
+                            <li>NCDC Tour</li>
+                        
+                        </ul>
+                    </li>
+                    <li>Projects</li>
+                    <li>Jobs</li>
+                    <li>Dashboard</li>
+                    <li>Contact</li>
+                </ul>
+
+            </div>
+            <div class=" feature-content">
+                <div class="box1"> <video width="555" style="height: 380px;width: 470px;"  controls> <source src="connect_centre.mp4" type="video/mp4"></video></div>
+                <div class="box2">
+                    <div class="box11"><h2 style="color: red;margin-left: 20%;">All info here </h2></div>
+                    <div><h2 style="margin-top: -37%; margin-left: 13%;color: white;">Coronavirus disease (COVID-19)</h2></div>
+                    <div><h2 style="margin-left: 40%;margin-top: -5%;color: white;">pandemic</h2></div>
+                    <div><h2 style="color: white;margin-top: -32%;margin-left: 6%;border-bottom:2px solid;padding: 0 0 0.5em 1em; ">EMERGENCY</h2></div>
+                </div>
+            </div>
+            <div class=" feature-article">
+                <div class="box3">
+                    <div class="box12"><img src="44.jpg" alt="" srcset=""></div>
+                    <div style="height: 30px;width: 300px;background-color: green;border-radius: 3px 3px 0 0;">
+                        <h3 style="margin: auto;margin-left: 5%;color: white;">Office of the Director General</h3></div>
+                        <div><p style="margin-top: -0.1px;margin-left: 5px;">Dr. Chikwe Ihekweazu has been Director General of the Nigeria Centre for Disease Control since the 15th of August 2016.</p></div>
+                </div>
+                <div class="box4">
+                    <div class="box13"><img src="42.jpg" alt="" srcset=""></div>
+                    <div style="height: 30px;width: 300px;background-color: blue;border-radius: 3px 3px 0 0">
+                        <h3 style="margin: auto;margin-left: 5%;color: white;">Training Highlights</h3></div>
+                        <div><p style="margin-top: -0.1px;margin-left: 5px;">The NFELTP is a two year in-service training program in applied epidemiology, 
+                            veterinary epidemiology and public health laboratory epidemiology and management.</p></div>
+                </div>
+                <div class="box5">
+                    <div class="box14"><img src="41.jpg" alt="" srcset=""></div>
+                    <div style="height: 30px;width: 300px;background-color: red;border-radius: 3px 3px 0 0">
+                        <h3 style="margin: auto;margin-left: 5%;color: white;">A-Z of Diseases</h3></div>
+                        <div><p style="margin-top: -0.1px;margin-left: 5px;">The A-Z of diseases is a directory of diseases that affect Nigerians.
+                             We have arranged them by alphabets for ease of search and navigation</p></div>
+                </div>
+            </div>
+            <div class="border feature-section">
+                <div class="box6">
+                    <div class="box15"><img src="51.jpg" alt="" srcset=""></div>
+                    <div style="height: 35px;width: 300px;background-color: green;border-radius: 3px 3px 0 0">
+                        <h4 style="margin: auto;margin-left: 5%;color: white;">FREQUENTLY ASKED QUESTIONS ON CORONAVIRUS - 29/02/20</h4></div>
+                        <div><p style="margin-top: -0.1px;margin-left: 5px;">The COVID-19 is a disease caused by a new strain of coronavirus that has not been previously identified in humans. 
+                            It was first reported to WHO on the 31st of December, 2019 in Wuhan, China</p></div>
+                </div>
+                <div class="box7">
+                    <div class="box16"><img src="50.jpg" alt="" srcset=""></div>
+                    <div style="height: 50px;width: 300px;background-color: purple;border-radius: 3px 3px 0 0">
+                        <h5 style="margin: auto;margin-left: 5%;color: white;">INFECTION PREVENTION AND CONTROL RECOMMENDATIONS DURING HEALTH CARE WHEN COVID-19 IS SUSPECTED</h5></div>
+                        <div><p style="margin-top: -0.1px;margin-left: 5px;">The guidance is intended for all healthcare workers (HCWs), the facility management team and Infection Prevention and Control (IPC) teams at all levels of healthcare in Nigeria</p></div>
+                </div>
+                <div class="box8">
+                    <div class="box17"><img src="49.jpg" alt="" srcset=""></div>
+                    <div style="height: 40px;width: 300px;background-color:orange;border-radius: 3px 3px 0 0">
+                        <h3 style="margin: auto;margin-left: 5%;color: white;">National Action Plan on Health Security (2018-2022)</h3></div>
+                        <div><p style="margin-top: -0.1px;margin-left: 5px;">The National Action Plan for Health Security (NAPHS) is a comprehensive multi-sectoral plan that integrates multiple workplans,
+                             addressing the major gaps identified, and prioritising them by national strategies and risks.</p></div>
+                </div>
+            </div>
+            <div class="border feature-box">
+                <div class="box9">
+                    <div style="height: 30px; width: 465px;background-color: green;border: 1px solid;"><h3 style="margin: auto;margin-left: 15px;color: white;">Host Ministry and Partner Parastatals</h3></div>
+                    <div style="height: 30px; width: 465px;background-color: green;border: 1px solid;margin-top: 110px;"><h3 style="margin: auto;margin-left: 15px;color: white;">Partners</h3></div>
+                </div>
+                <div class="box10">
+                    <div style="height: 30px; width: 465px;background-color: green;border-radius: 3px 3px 0 0;"><h3 style="margin: auto;margin-left: 15px;color: white;">Maps & Infographs</h3></div>
+                    <div style="margin-top:15px ;"><img src="infographic.jpg" alt="" srcset=""></div>
+                    
+                </div>
+            </div>
+           
+            
+        </div>
+        <div class="footer">
+            <div class="box18">
+                <div style="height: 90px;width: 500px;"><h1 style="color: white;margin-top: 50px;">Mandate of NCDC</h1></div>
+                <div style="height: 150px;width: 500px;"><p style="color: white;margin-top: -40px;">The Nigeria Centre for Disease Control (NCDC) was established in the year 2011 in response to the challenges of public health emergencies and to enhance Nigeria’s preparedness and response to epidemics through prevention,
+                     detection and control of communicable and non-communicable diseases.</p></div>
+            </div>
+            <div class="box19">
+                <div style="height: 90px;width: 300px;"><h1 style="color: white;margin-top: 50px;">Social Media</h1></div>
+                <div style=" height: 135px;width: 260px;border-bottom: 1px solid white;margin-top: -25px;"><p style="color: white;"></p>
+                    <div style="height: 25px; width: 300px;"><p style="margin: auto;color: white;margin-left: 30px;margin-top: -40px"><i class="fa fa-facebook-square" aria-hidden="true"></i> @NCDCgov</p></div>
+                    <div style="height: 25px; width: 300px;"><p style="margin: auto;color: white;margin-left: 30px;"><i class="fa fa-twitter" aria-hidden="true"></i> @NCDCgov</p></div>
+                    <div style="height: 25px; width: 300px;"><p style="margin: auto;color: white;margin-left: 30px;"><i class="fa fa-youtube" aria-hidden="true"></i> NCDC</p></div>
+                    <div style="height: 25px; width: 300px;"><p style="margin: auto;color: white;margin-left: 30px;"><i class="fa fa-twitter" aria-hidden="true"></i> NCDCgov</p></div>
+                    <div style="height: 25px; width: 300px;"><p style="margin: auto;color: white;margin-left: 30px;"> <i class="fa fa-envelope" aria-hidden="true"></i> t.me/NCDCgov (Telegram) </p></div>
+                
+                </div>
+                <div style=" height: 30px;width: 180px;margin-left: 30px;background-color: mediumseagreen; cursor: pointer;"><p style="margin: auto;color: white;margin-left: 20px;margin-top: 5px;">Suscribe To Newsletter</p></div>
+            </div>
+            <div class="box20">
+                <div style="height: 90px;width: 370px;"><h1 style="color: white;margin-left: 100px;margin-top: 50px;">Contacts</h1></div>
+                <div style="height:150px;width:370px">
+                    <div style="height: 25px; width: 370px;"><p style="margin: auto;color: white;margin-left: 20px;margin-top: -40px;"><i class="fa fa-home" aria-hidden="true"></i> Plot 801, Ebitu Ukiwe Street, Jabi, Abuja, Nigeria</p></div>
+                    <div style="height: 25px; width: 370px;"><p style="margin: auto;color: white;margin-left: 20px;"><i class="fa fa-phone" aria-hidden="true"></i>0800 970000 10 (Toll-Free Call Centre)</p></div>
+                    <div style="height: 25px; width: 370px;"><p style="margin: auto;color: white;margin-left: 20px;"><i class="fa fa-envelope" aria-hidden="true"></i>info@ncdc.gov.ng</p></div>
+                </div>
+            </div>
+        </div>
+        <div class=" copy">
+            <div style="height: 30px;width:100%"><h1 style="margin: auto;margin-left: 100px;"> Connect Centre</h1></div>
+            <div style="height:15px;width: 25%; float: left;"><div style="height: 30px;width: 30px;background-color: white;"><img src="https://www.ncdc.gov.ng/themes/common/imgs/flat/social/phone-booth.png" alt="" srcset="" height="30px" width="30px"></div><div style="margin-top: -25px; margin-left: 45px;" >Toll Free Number: 0800 9700 0010</div></div>
+            <div style="height:15px;width: 25%;float: left;"><div style="height: 30px;width: 30px;background-color: white;"><img src="https://www.ncdc.gov.ng/themes/common/imgs/flat/social/whatsapp.png" alt="" srcset="" height="30px" width="30px"></div><div style="margin-top: -25px; margin-left: 45px;"> Whatsapp: +234 708 711 0839</div></div>
+            <div style="height:15px;width: 25%;float: left;"><div  style="height: 30px;width: 30px;background-color: white;"><img src="https://www.ncdc.gov.ng/themes/common/imgs/flat/social/public-phone.png" alt="" srcset="" height="30px" width="30px"></div><div style="margin-top: -25px; margin-left: 45px;"> SMS Number: +234 809 955 5577</div></div>
+            <div style="height:15px;width: 20%;float: left;"><div  style="height: 30px;width: 30px;background-color: white;"><img src="https://www.ncdc.gov.ng/themes/common/imgs/flat/social/public-phone.png" alt="" srcset="" height="30px" width="30px"></div><div style="margin-top: -25px; margin-left: 45px;">Call: +234 703 670 8970</div></div>
+        </div>
+        
+
+
+    </div>
+    
+</body>
+</html>
